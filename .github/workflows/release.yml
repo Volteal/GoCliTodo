@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   build:
@@ -39,5 +38,5 @@ jobs:
         with:
           repo_token: ${{secrets.GITHUB_TOKEN }}
           tag: ${{ github.ref }}
-          file: ./release/todoapp-*
+          file: ./release/todo-*
           file_glob: true

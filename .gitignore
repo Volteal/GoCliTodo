@@ -19,6 +19,7 @@ vendor/
 
 # Binary directory
 bin
+release
 
 # Go workspace file
 go.work
