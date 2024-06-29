@@ -1,4 +1,4 @@
-[![Lint Go Code](https://github.com/Volteal/GoCliTodoApp/actions/workflows/lint.yml/badge.svg)](https://github.com/Volteal/GoCliTodoApp/actions/workflows/lint.yml) [![Build and Release Binaries](https://github.com/Volteal/GoCliTodoApp/actions/workflows/release.yml/badge.svg?event=release)](https://github.com/Volteal/GoCliTodoApp/actions/workflows/release.yml)
+[![Linting](https://github.com/Volteal/GoCliTodoApp/actions/workflows/lint.yml/badge.svg)](https://github.com/Volteal/GoCliTodoApp/actions/workflows/lint.yml) [![Release Bin](https://github.com/Volteal/GoCliTodoApp/actions/workflows/release.yml/badge.svg?event=release)](https://github.com/Volteal/GoCliTodoApp/actions/workflows/release.yml)
 
 # GoCliTodo
 
