@@ -45,7 +45,7 @@ func (t *TodoList) Show() {
 			taskNote = common.Green(item.TaskNote)
 			taskDone = common.Green("\u2705 Complete")
 		}
-		cells = append(cells, *&[]*simpletable.Cell{
+		cells = append(cells, []*simpletable.Cell{
 			{Align: simpletable.AlignCenter, Text: fmt.Sprintf("%d", idx)},
 			{Text: taskName},
 			{Text: taskNote},
