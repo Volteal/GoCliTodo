@@ -1,3 +1,5 @@
+[![Lint Go Code](https://github.com/Volteal/GoCliTodoApp/actions/workflows/lint.yml/badge.svg)](https://github.com/Volteal/GoCliTodoApp/actions/workflows/lint.yml) [![Build and Release Binaries](https://github.com/Volteal/GoCliTodoApp/actions/workflows/release.yml/badge.svg?event=release)](https://github.com/Volteal/GoCliTodoApp/actions/workflows/release.yml)
+
 # GoCliTodo
 
 **GoCliTodo** is a simple CLI todo app written in Go. running the -add command creates a todo-list.json in the current folder allowing you to create files based on the project you are working on.
