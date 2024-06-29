@@ -1,0 +1,39 @@
+name: Build Release Binaries
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  build:
+    name: Build Release Assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set Up Go 1.22.3
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.22.3
+
+      - name: Display installed Go version
+        run: go version
+
+      - name: Display the release tag
+        run: echo ${{ github.event.release.tag_name }}
+
+      - name: Build the arcvhive executables
+        run: bash ./scripts/build-release.sh ${{ github.event.release.tag_name }}
+
+      - name: List all executables
+        run: ls -l ./release
+
+      - name: Upload app binaries
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref }}
+          file: ./release/azerothianarchive-*
+          file_glob: true
